@@ -20,24 +20,20 @@ public class CoolFussballManager extends Application {
             
             @Override
             public void handle(ActionEvent event) {
-                System.out.println("Hello World!");
-                SeasonData seasondata = new SeasonData();
+                SeasonData seasonData = new SeasonData();
             }
         });
         
         StackPane root = new StackPane();
         root.getChildren().add(btnGameStart);
         
-        Scene scene = new Scene(root, 300, 250);
+        Scene scene = new Scene(root, 800, 600);
         
         primaryStage.setTitle("Cool Fußball Manager");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         launch(args);
     }
